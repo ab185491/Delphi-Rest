@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{16631873-4837-4A22-93F4-8952878D3325}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="server\EmployeeStandAlone.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="client\EmployeeClient.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="EmployeeStandAlone">
+        <MSBuild Projects="server\EmployeeStandAlone.dproj"/>
+    </Target>
+    <Target Name="EmployeeStandAlone:Clean">
+        <MSBuild Projects="server\EmployeeStandAlone.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="EmployeeStandAlone:Make">
+        <MSBuild Projects="server\EmployeeStandAlone.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="EmployeeClient">
+        <MSBuild Projects="client\EmployeeClient.dproj"/>
+    </Target>
+    <Target Name="EmployeeClient:Clean">
+        <MSBuild Projects="client\EmployeeClient.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="EmployeeClient:Make">
+        <MSBuild Projects="client\EmployeeClient.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="EmployeeStandAlone;EmployeeClient"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="EmployeeStandAlone:Clean;EmployeeClient:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="EmployeeStandAlone:Make;EmployeeClient:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

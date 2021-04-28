@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/04/08 07:48:55.000.875,=C:\Users\POSDEV\Documents\Embarcadero\Studio\Projects\FormUnit1.pas</Transaction>
+    <Transaction>2021/04/08 07:48:56.000.140,=C:\Users\POSDEV\Documents\Embarcadero\Studio\Projects\WebModuleUnit1.pas</Transaction>
+    <Transaction>2021/04/08 07:49:55.000.386,C:\Users\POSDEV\Documents\Embarcadero\Studio\Projects\FormUnit1.dfm=C:\Users\POSDEV\Documents\Embarcadero\Studio\Projects\Learn-Delphi\Rest\employees\server\forms\frmMain.dfm</Transaction>
+    <Transaction>2021/04/08 07:49:55.000.386,C:\Users\POSDEV\Documents\Embarcadero\Studio\Projects\FormUnit1.pas=C:\Users\POSDEV\Documents\Embarcadero\Studio\Projects\Learn-Delphi\Rest\employees\server\forms\frmMain.pas</Transaction>
+    <Transaction>2021/04/08 07:50:11.000.943,C:\Users\POSDEV\Documents\Embarcadero\Studio\Projects\WebModuleUnit1.pas=C:\Users\POSDEV\Documents\Embarcadero\Studio\Projects\Learn-Delphi\Rest\employees\server\modules\modMain.pas</Transaction>
+    <Transaction>2021/04/08 07:50:11.000.943,C:\Users\POSDEV\Documents\Embarcadero\Studio\Projects\WebModuleUnit1.dfm=C:\Users\POSDEV\Documents\Embarcadero\Studio\Projects\Learn-Delphi\Rest\employees\server\modules\modMain.dfm</Transaction>
+    <Transaction>2021/04/08 07:50:40.000.387,C:\Users\POSDEV\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\POSDEV\Documents\Embarcadero\Studio\Projects\Learn-Delphi\Rest\employees\server\EmployeeStandAlone.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
