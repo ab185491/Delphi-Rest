@@ -49,7 +49,7 @@ begin
          except on E: Exception do
          res := a+b;
          end;
-         
+         Response.SetCustomHeader('Access-Control-Allow-Origin','*');
          Response.Content := res;
 end;
 
@@ -76,6 +76,7 @@ begin
       obj.AddPair('param2', (num2));
       obj.AddPair('result', (result));
       Response.ContentType := 'application/json';
+      Response.SetCustomHeader('Access-Control-Allow-Origin','*');
       Response.Content := obj.ToString;
 end;
 
@@ -94,6 +95,7 @@ procedure TWebModule1.WebModule1TestConnectionAction(Sender: TObject;
 begin
 Response.StatusCode := 200;
 Response.ContentType := 'application/json';
+Response.SetCustomHeader('Access-Control-Allow-Origin','*');
 Response.Content := '{"msg" : "Connection Established"}';
 end;
 
